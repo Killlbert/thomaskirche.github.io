@@ -7,36 +7,48 @@ body {
 	background-color: #ccff99;
 	margin: 0px;
 }
-/*************  Media *************/
-.container {
-	padding-right: 0px;
-	padding-left: 0px;
-	margin-right: auto;
+
+h1 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 28px;
+}
+
+h2 {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 22px;
+	text-align: center;
+}
+
+h3 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 20px;
+}
+
+p{
+	color: #336600
+}
+
+img.centered{
+	display: block;
 	margin-left: auto;
+	margin-right: auto;
 }
 
-@media ( min-width : 768px) {
-	.container {
-		width: 750px;
-	}
+img.text-left{
+	float: right;
 }
-
-@media ( min-width : 992px) {
-	.container {
-		width: 970px;
-	}
-}
-
-@media ( min-width : 1200px) {
-	.container {
-		width: 1170px;
-	}
+img.text-right{
+	float: left;
 }
 
 /************* Page Header *************/
 #page-header-title {
 	margin-bottom: -5px;
-	background-image: url("../images/bg_title.png");
+	background-image: url("../images/header-bg.png");
 }
 
 /* Damit wird das Bild autom. verkleinert, bzw. vergroessert auf die Originalgroesse */
@@ -49,7 +61,7 @@ body {
 }
 /************* Navigation Oben *************/
 #nav-top {
-	background-image: url("../images/nav_oben_ziegel.png");
+	background-image: url("../images/nav-top-bg.png");
 	background-repeat: repeat-x;
 	min-height: 25px;
 }
@@ -96,7 +108,7 @@ body {
 
 #nav-left {
 	position: absolute;
-	background-image: url("../images/nav_bg_left.png");
+	background-image: url("../images/nav-left-bg.png");
 	background-repeat: repeat-y;
 	min-height: 1024px;
 	padding-bottom: 10px;
@@ -115,6 +127,7 @@ body {
 	padding-left: 10px;
 }
 
+/************ CONTENT-AREA **************/ 
 #content {
 	margin-left: 124px; /* Abstand vom linken Menue */
 	background-color: #ccff99;
@@ -128,25 +141,44 @@ body {
 
 .row  {
 	clear: both;
-	
 }
 .col1 {
-	width: 25%;
+	width: 12.5%;
 	float: left;
 }
 
 .col2 {
-	width: 50%;
+	width: 25%;
 	float: left;
 	overflow: auto;
 }
 
 .col3 {
-	width: 75%;
+	width: 37.5%;
 	float: left;
 }
 
 .col4 {
+	width: 50%;
+	float: left;
+}
+.col5 {
+	width: 62.5%;
+	float: left;
+}
+
+.col6 {
+	width: 75%;
+	float: left;
+	overflow: auto;
+}
+
+.col7 {
+	width: 87,5%;
+	float: left;
+}
+
+.col8 {
 	width: 100%;
 	float: left;
 }
@@ -170,33 +202,11 @@ body {
 	}
 }
 
-.txt-gruen {
-	color: #336600;
+.blank-line{
+	height:18px;
 }
-
-h1 {
-	margin-top: 0px;
-	margin-bottom: 0px;
-	font-family: Arial,Helvetica,sans-serif;
-	font-size: 28px;
-}
-
-h2 {
-	margin-top: 0px;
-	margin-bottom: 0px;
-	font-size: 22px;
-	text-align: center;
-}
-
-h3 {
-	margin-top: 0px;
-	margin-bottom: 0px;
-	font-size: 20px;
-}
-
 .vorschau {
-	/*width: 400px;*/
-	
+	min-width: 240px;
 }
 
 .vorschau>ul>li>h3 {
