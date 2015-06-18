@@ -1,3 +1,6 @@
+/* Script-Font von Google importieren */
+@import url(http://fonts.googleapis.com/css?family=Cookie);
+
 /*!
 * Thomaskirchen-Styles
 * Hier sind u.a. Anpassungen fuer bootstrap
@@ -9,10 +12,11 @@ body {
 }
 
 h1 {
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 	font-family: Arial,Helvetica,sans-serif;
 	font-size: 28px;
+	text-align: center;
 }
 
 h2 {
@@ -29,7 +33,7 @@ h3 {
 }
 
 p{
-	color: #336600
+	color: #336600;
 }
 
 img.centered{
@@ -44,11 +48,13 @@ img.text-left{
 img.text-right{
 	float: left;
 }
-
-/************* Page Header *************/
+.txt-gruen{
+	color:	#336600;
+}
+/************* Page Header - Anfang *************/
 #page-header-title {
 	margin-bottom: -5px;
-	background-image: url("../images/header-bg.png");
+	background-image: url("../images/header-bg.jpg");
 }
 
 /* Damit wird das Bild autom. verkleinert, bzw. vergroessert auf die Originalgroesse */
@@ -56,10 +62,11 @@ img.text-right{
 	max-width: 100%;
 	height: auto;
 }
-#page-header-title>a:visited, a:hover, a{
+#page-header-title>a:visited, #page-header-title>a:hover, #page-header-title>a{
 	color: transparent;
 }
-/************* Navigation Oben *************/
+/************* Page Header - Ende *************/
+/************* Navigation Top - Anfang *************/
 #nav-top {
 	background-image: url("../images/nav-top-bg.png");
 	background-repeat: repeat-x;
@@ -100,16 +107,16 @@ img.text-right{
 	{
 	color: #ccff99;
 }
-
+/************* Navigation Top - Ende *************/
 /************* Navigation Links *************/
 #nav-container {
 	position: relative;
+	background-image: url("../images/nav-left-bg.png");
+	background-repeat: repeat-y;
 }
 
 #nav-left {
 	position: absolute;
-	background-image: url("../images/nav-left-bg.png");
-	background-repeat: repeat-y;
 	min-height: 1024px;
 	padding-bottom: 10px;
 }
@@ -137,6 +144,9 @@ img.text-right{
 	font-size: 18px;
 	color: #993333;
 	padding: 10px 10px 0px 10px;
+}
+#content>a:visited{
+	color: #993333;
 }
 
 .row  {
@@ -222,4 +232,56 @@ img.text-right{
 	border-bottom: thick;
 	border-bottom-style: dotted;
 	text-align: center;
+}
+
+.rueckblick{
+	text-align: center;
+}
+.rueckblick>ol{
+	list-style: none;
+}
+.rueckblick>ol>li{
+	border-bottom-style: dotted;
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+/******** Rueckblicke-Menu - Anfang *********/
+.rueckblick .menu>ol{
+	list-style-type: none;
+	display: table;
+    margin: 0 auto;
+}
+.rueckblick .menu>ol>li{
+	float: left;
+	margin: 10px 30px 0px 0px;
+}
+.rueckblick .menu>ol>li.active>a{
+	text-decoration: none;
+	color: #993333;
+}
+/******** Rueckblicke-Menu - Ende *********/
+/******** Gemeindebrief **********/
+.gemeindebrief{
+	clear: left;
+}
+.gemeindebrief>table{
+	border: 0; 
+	width: 100%;
+}
+.gemeindebrief>table>tbody>tr>td{
+	text-align: center;
+	color: #336600;
+	width: 25%;
+	font-size: 14px;
+}
+.gemeindebrief>table>tbody>tr>td.ueberschrift{
+	color: #336600;
+	text-align: center;
+	height: 100px;
+}
+.gemeindebrief>table>tbody>tr>td>img{
+	height: 98px;
+	width: 67px;
+	margin-left: auto;
+	margin-right: auto;
 }
