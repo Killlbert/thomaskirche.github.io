@@ -34,8 +34,12 @@ h3 {
 
 p{
 	color: #336600;
+	text-align: center;
 }
 
+strong{
+	color: #993333;
+}
 img.centered{
 	display: block;
 	margin-left: auto;
@@ -212,7 +216,27 @@ img.text-right{
 	}
 }
 
+.zeile-zentriert{
+	
+	margin:0 auto;
+    overflow:hidden;
+	border:1px solid blue;
+}
+.zeile-zentriert>div{
+	 display:inline-block;
+    vertical-align:middle;
+	border:1px solid #336600;
+}
+.links{
+	float:left;
+	border:1px solid white;
+}
+.rechts{
+	float:right;
+	border:1px solid black;
+}
 .blank-line{
+	clear: both;
 	height:18px;
 }
 .vorschau {
@@ -232,6 +256,27 @@ img.text-right{
 	border-bottom: thick;
 	border-bottom-style: dotted;
 	text-align: center;
+}
+
+.veranstaltung {
+	text-align: left;
+}
+
+.veranstaltung>ul>li>h3 {
+	color: #336600;
+}
+
+.veranstaltung>ul>li>h2 {
+	color: #336600;
+}
+.veranstaltung>ul>li>p{
+	text-align: left;
+	color: #993333;
+}
+.veranstaltung>ul>li {
+	margin-bottom: 60px;
+	list-style-type: none;
+	text-align: left;
 }
 
 .rueckblick{
