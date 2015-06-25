@@ -11,13 +11,23 @@
 		<title>Thomaskirche - Evangelische Pfarrgemeinde A.B. Wien Favoriten</title>
 		<!-- Custom styles for this template -->
 		<link href="css/tk_style.css" rel="stylesheet">
-		<!--
-	<script src="js/jquery-2.1.4.min.js"></script>
+		<!-- <script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/tk.js"></script> -->
 	</head>
 	<body>
+		<div id="fb-root"></div>
+		<script>
+			(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.3";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
 		<div id="page-header-title">
-			<a href="index.html"><img src="images/header.jpg"></a>
+			<img src="images/header.jpg">
+			<a href="index.html" id="logo"></a>
 		</div>
 		<div id="nav-top">
 			<ul>
@@ -54,6 +64,17 @@
 						<br>...sei es im Internet oder real.</h2>
 					<img class="centered" alt="Eingang" src="images/eingang.jpg" />
 				</div>
+				<div>
+					<p>Besuchen Sie uns auch auf Facebook</p>
+					<div class="fb-page" data-href="https://www.facebook.com/thomaskirche.wien" data-width="480"
+					data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="false">
+						<div class="fb-xfbml-parse-ignore">
+							<blockquote cite="https://www.facebook.com/thomaskirche.wien">
+								<a href="https://www.facebook.com/thomaskirche.wien">Thomaskirche - Evangelische Pfarrgemeinde A.B. Wien Favoriten</a>
+							</blockquote>
+						</div>
+					</div>
+				</div>
 				<div class="col3 vorschau">
 					<ul>
 						<li>
@@ -62,7 +83,8 @@
 								<br>Nächster Termin am 17.&nbsp;Juni&nbsp;2015</p>
 						</li>
 						<li>
-							<h3>GUSTAV ADOLF FEST</h3>Do., 4. Juni. 2015
+							<h3>GUSTAV ADOLF FEST</h3>
+							<p>Do., 4. Juni. 2015</p>
 							<ul style="list-style-type: none;text-align: left;">
 								<li>10.30 Uhr Rhytm. Gottesdienst</li>
 								<li>14.00 Uhr Offenes Singen / Kinderprogramm</li>
@@ -74,5 +96,5 @@
 			</div>
 		</div>
 	</body>
-	
+
 </html>
