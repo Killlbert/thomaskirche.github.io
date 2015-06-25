@@ -82,6 +82,7 @@ img.text-right{
 	background-image: url("../images/nav-top-bg.png");
 	background-repeat: repeat-x;
 	min-height: 25px;
+	min-width: 1024px;
 }
 
 #nav-top>ul ,#nav-left>ul{
@@ -91,11 +92,12 @@ img.text-right{
 	overflow: hidden;
 }
 #nav-top>ul {
+	display: table;
 	margin-left: 134px;
 }
 
 #nav-top>ul>li {
-	float: left;
+display: table-cell;
 }
 
 #nav-top>ul>li>a, #nav-left>ul>li>a {
