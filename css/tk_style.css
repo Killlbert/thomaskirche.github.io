@@ -5,6 +5,13 @@
 * Thomaskirchen-Styles
 * Hier sind u.a. Anpassungen fuer bootstrap
  */
+ 
+@media only screen and (max-width: 480px) {
+}
+@media only screen and (min-width: 481px) and (max-width: 1290px) {
+}
+
+
 body {
 	/*background-color: #cac29a;*/
 	background-color: #ccff99;
@@ -66,15 +73,13 @@ img.text-right{
 }
 /************* Page Header - Anfang *************/
 #page-header-title {
-	margin-bottom: -5px;
+	margin-bottom: -4px; /* keine Ahnung warum da ein Abstand ist */
 	background-image: url("../images/header-bg.jpg");
 }
 
-/* Damit wird das Bild autom. verkleinert, bzw. vergroessert auf die Originalgroesse */
-#page-header-title>img {
-}
+
 #page-header-title>a:visited, #page-header-title>a:hover, #page-header-title>a{
-	color: transparent;
+	color: transparent; /* damit das Logo nicht umrandet wird */
 }
 /************* Page Header - Ende *************/
 /************* Navigation Top - Anfang *************/
@@ -82,9 +87,8 @@ img.text-right{
 	background-image: url("../images/nav-top-bg.png");
 	background-repeat: repeat-x;
 	min-height: 25px;
-	min-width: 1024px;
+	min-width: 1024px; /* damit die Menüleiste mind. genauso breit wie das Bild ist */ 
 }
-
 #nav-top>ul ,#nav-left>ul{
 	list-style-type: none;
 	margin: 0;
@@ -95,11 +99,12 @@ img.text-right{
 	display: table;
 	margin-left: 134px;
 }
-
 #nav-top>ul>li {
-display: table-cell;
+	display: table-cell;
 }
+/************* Navigation Top - Ende *************/
 
+/************* gilt für beide Menübereiche - Anfang *******/
 #nav-top>ul>li>a, #nav-left>ul>li>a {
 	display: block;
 	color: #ffcc33;
@@ -107,8 +112,9 @@ display: table-cell;
 	font-size: 24px;
 	text-decoration: none;
 }
+
 #nav-top>ul>li>a, #nav-left>ul>li>a {
-	width: 124px;
+	width: 124px; /* die menüs sind gleich groß */
 	height: 28px;
 }
 
@@ -120,14 +126,16 @@ display: table-cell;
 	{
 	color: #ccff99;
 }
-/************* Navigation Top - Ende *************/
-/************* Navigation Links *************/
+/************* gilt für beide Menübereiche - Ende *******/
+/** Navigations-Container **/
+/* braucht man für nav-left und den eigentlichen content */
 #nav-container {
 	position: relative;
 	background-image: url("../images/nav-left-bg.png");
-	background-repeat: repeat-y;
+	background-repeat: repeat-y; /* dadurch werden die Zeigel nur nach unten vermehrt */
 }
 
+/************* Navigation Links *************/
 #nav-left {
 	position: absolute;
 	min-height: 1024px;
@@ -166,22 +174,6 @@ display: table-cell;
 	display: table;
 	width: 100%;
 }
-.col1-4{
-	display: table-cell;
-	width: 25%;
-}
-.col2-4{
-	display: table-cell;
-	width: 50%;
-}
-.col3-4{
-	display: table-cell;
-	width: 75%;
-}
-.col4-4{
-	display: table-cell;
-	width: 100%;
-}
 
 .col {
 	display: table-cell;
@@ -189,62 +181,40 @@ display: table-cell;
 	width: 50%;
 	text-align: center;
 }
-
-@media only screen and (max-width: 1100px) {
-	.col1-4 {
-		width: 100%;
-		float: left;
-	}
-	.col2-4 {
-		width: 100%;
-		float: left;
-	}
-	.col3-4 {
-		width: 100%;
-		float: left;
-	}
-	.col4 {
-		width: 100%;
-		float: left;
-	}
+.col1 {
+	width: 12.5%;
+	display: table-cell;
 }
-@media only screen and (min-width: 1001px) and (max-width: 1290px) {
-	.col1-4 {
-		width: 50%;
-		float: left;
-	}
-	.col2-4 {
-		width: 50%;
-		float: left;
-	}
-	.col3-4 {
-		width: 50%;
-		float: left;
-	}
-	.col4 {
-		width: 50%;
-		float: left;
-	}
+.col2 {
+	width: 25%;
+	display: table-cell;}
+
+.col3 {
+	width: 37.5%;
+	display: table-cell;}
+
+.col4 {
+	width: 50%;
+	display: table-cell;
+}
+.col5 {
+	width: 62.5%;
+	display: table-cell;
 }
 
-.zeile-zentriert{
-	
-	margin:0 auto;
-    overflow:hidden;
-	border:1px solid blue;
+.col6 {
+	width: 75%;
+	display: table-cell;
 }
-.zeile-zentriert>div{
-	 display:inline-block;
-    vertical-align:middle;
-	border:1px solid #336600;
+
+.col7 {
+	width: 87,5%;
+	display: table-cell;
 }
-.links{
-	float:left;
-	border:1px solid white;
-}
-.rechts{
-	float:right;
-	border:1px solid black;
+
+.col8 {
+	width: 100%;
+	display: table-cell;
 }
 .blank-line{
 	clear: both;
