@@ -291,32 +291,6 @@ img.text-right{
 }
 /******** Rueckblicke-Menu - Ende *********/
 /******** Gemeindebrief **********/
-/*
-.gemeindebrief{
-	clear: left;
-}
-.gemeindebrief>table{
-	border: 0; 
-	width: 100%;
-}
-.gemeindebrief>table>tbody>tr>td{
-	text-align: center;
-	color: #336600;
-	width: 25%;
-	font-size: 14px;
-}
-.gemeindebrief>table>tbody>tr>td.ueberschrift{
-	color: #336600;
-	text-align: center;
-	height: 100px;
-}
-.gemeindebrief>table>tbody>tr>td>img{
-	height: 98px;
-	width: 67px;
-	margin-left: auto;
-	margin-right: auto;
-}
-*/
 .gemeindebriefe{
 	display: table;
 	width: 100%;
@@ -336,10 +310,4 @@ img.text-right{
 	display: table-caption;
 	color: #336600;
 	text-align: center;
-}
-.gemeindebrief>table>tbody>tr>td>img{
-	height: 98px;
-	width: 67px;
-	margin-left: auto;
-	margin-right: auto;
 }
