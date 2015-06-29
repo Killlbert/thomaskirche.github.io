@@ -10,7 +10,6 @@ Gottesdienst
 	Familiengottesdienst
 Kreise
 	Chor
-	Gospelchor
 	DVUA
 	Bibelkreis
 	Jugendclub

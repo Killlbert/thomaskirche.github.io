@@ -99,10 +99,11 @@ img.text-right{
 }
 #nav-top>ul {
 	display: table;
-	margin-left: 134px;
+	margin-left: 124px;
 }
 #nav-top>ul>li {
 	display: table-cell;
+	text-align: center;
 }
 /************* Navigation Top - Ende *************/
 
@@ -179,37 +180,47 @@ img.text-right{
 .col1 {
 	width: 12.5%;
 	display: table-cell;
+	vertical-align: middle;
 }
 .col2 {
 	width: 25%;
-	display: table-cell;}
+	display: table-cell;
+	vertical-align: middle;
+	}
 
 .col3 {
 	width: 37.5%;
-	display: table-cell;}
+	display: table-cell;
+	vertical-align: middle;
+	}
 
 .col4 {
 	width: 50%;
 	display: table-cell;
+	vertical-align: middle;
 }
 .col5 {
 	width: 62.5%;
 	display: table-cell;
+	vertical-align: middle;
 }
 
 .col6 {
 	width: 75%;
 	display: table-cell;
+	vertical-align: middle;
 }
 
 .col7 {
 	width: 87,5%;
 	display: table-cell;
+	vertical-align: middle;
 }
 
 .col8 {
 	width: 100%;
 	display: table-cell;
+	vertical-align: middle;
 }
 .blank-line{
 	clear: both;
@@ -218,6 +229,7 @@ img.text-right{
 
 /******* Vorschaubereich auf index.html ********/
 .vorschau {
+	vertical-align: top;
 	min-width: 240px;
 }
 
