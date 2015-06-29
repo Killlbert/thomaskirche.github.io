@@ -1,11 +1,10 @@
+/*
+* Thomaskirchen-Styles
+ */
+ 
 /* Script-Font von Google importieren */
 @import url(http://fonts.googleapis.com/css?family=Cookie);
 
-/*!
-* Thomaskirchen-Styles
-* Hier sind u.a. Anpassungen fuer bootstrap
- */
- 
 @media only screen and (max-width: 480px) {
 }
 @media only screen and (min-width: 481px) and (max-width: 1290px) {
@@ -13,11 +12,14 @@
 
 
 body {
-	/*background-color: #cac29a;*/
 	background-color: #ccff99;
+	background-image: url("../images/nav-left-bg.png"); /* Ziegel fuer linkes Menue */
+	background-repeat: repeat-y; /* dadurch werden die Ziegel nur nach unten vervielfacht */
 	margin: 0px;
 }
-
+/*
+* TK-Kreuz wird links-oben im Header eingeblendet.
+*/
 #logo{
     position: absolute;
     top: 10px;
@@ -25,8 +27,9 @@ body {
 	background-image: url("../images/tk_logo.png");
 	width: 102px;
 	height: 106px;
-	
 }
+
+/********* Allgemeine Definitionen - Anfang ********/
 h1 {
 	margin-top: 15px;
 	margin-bottom: 15px;
@@ -71,13 +74,12 @@ img.text-right{
 .txt-gruen{
 	color:	#336600;
 }
-/************* Page Header - Anfang *************/
+/*********** Allgemeine Definitionen - Ende ***********/
+/*********** Page Header - Anfang *************/
 #page-header-title {
 	margin-bottom: -4px; /* keine Ahnung warum da ein Abstand ist */
 	background-image: url("../images/header-bg.jpg");
 }
-
-
 #page-header-title>a:visited, #page-header-title>a:hover, #page-header-title>a{
 	color: transparent; /* damit das Logo nicht umrandet wird */
 }
@@ -86,8 +88,8 @@ img.text-right{
 #nav-top {
 	background-image: url("../images/nav-top-bg.png");
 	background-repeat: repeat-x;
-	min-height: 25px;
-	min-width: 1024px; /* damit die Menüleiste mind. genauso breit wie das Bild ist */ 
+	min-height: 28px;
+	min-width: 1024px; /* damit die Menueleiste mind. genauso breit wie das Bild ist */ 
 }
 #nav-top>ul ,#nav-left>ul{
 	list-style-type: none;
@@ -127,19 +129,13 @@ img.text-right{
 	color: #ccff99;
 }
 /************* gilt für beide Menübereiche - Ende *******/
-/** Navigations-Container **/
-/* braucht man für nav-left und den eigentlichen content */
-#nav-container {
-	position: relative;
-	background-image: url("../images/nav-left-bg.png");
-	background-repeat: repeat-y; /* dadurch werden die Zeigel nur nach unten vermehrt */
-}
 
 /************* Navigation Links *************/
 #nav-left {
 	position: absolute;
-	min-height: 1024px;
 	padding-bottom: 10px;
+	padding-top: 26px;
+	padding-left: 10px;
 }
 
 #nav-left>ul {
@@ -159,7 +155,6 @@ img.text-right{
 #content {
 	margin-left: 124px; /* Abstand vom linken Menue */
 	background-color: #ccff99;
-	min-height: 1024px;
 	font-family: Arial,Helvetica,sans-serif;
 	font-weight: normal;
 	font-size: 18px;
@@ -220,6 +215,8 @@ img.text-right{
 	clear: both;
 	height:18px;
 }
+
+/******* Vorschaubereich auf index.html ********/
 .vorschau {
 	min-width: 240px;
 }
@@ -244,6 +241,7 @@ img.text-right{
 	text-align: center;
 }
 
+/******* Veranstaltungen auf neuigkeiten.html ******/
 .veranstaltung {
 	text-align: left;
 }
@@ -264,7 +262,8 @@ img.text-right{
 	list-style-type: none;
 	text-align: left;
 }
-
+/****** Rueckblicke *******/
+/* habe hier eine Liste gemacht, damit die Trennlinie dazwischen leichter geaendert/angepasst werden kann */
 .rueckblick{
 	text-align: center;
 }
@@ -292,6 +291,7 @@ img.text-right{
 }
 /******** Rueckblicke-Menu - Ende *********/
 /******** Gemeindebrief **********/
+/*
 .gemeindebrief{
 	clear: left;
 }
@@ -309,6 +309,33 @@ img.text-right{
 	color: #336600;
 	text-align: center;
 	height: 100px;
+}
+.gemeindebrief>table>tbody>tr>td>img{
+	height: 98px;
+	width: 67px;
+	margin-left: auto;
+	margin-right: auto;
+}
+*/
+.gemeindebriefe{
+	display: table;
+	width: 100%;
+	margin-bottom: 40px;
+}
+.gemeindebriefe .gemeindebrief{
+	display: table-row;
+	text-align: center;
+	color: #336600;
+	font-size: 14px;
+}
+.gemeindebriefe .gemeindebrief .pdf{
+	display: table-cell;
+	width: 25%;
+}
+.gemeindebriefe .ueberschrift{
+	display: table-caption;
+	color: #336600;
+	text-align: center;
 }
 .gemeindebrief>table>tbody>tr>td>img{
 	height: 98px;
