@@ -21,38 +21,11 @@
 			<img src="images/header.jpg">
 			<a href="index.html" id="logo"></a>
 		</div>
-		<div id="nav-top">
-			<ul>
-				<li>&nbsp;</li>
-			</ul>
-		</div>
-		<div id="nav-left">
-			<ul>
-				<li>
-					<a href="gemeinde/allgemein.html">Gemeinde</a>
-				</li>
-				<li>
-					<a href="gottesdienst/allgemein.html">Gottesdienst</a>
-				</li>
-				<li>
-					<a href="kreise/chor.html">Kreise</a>
-				</li>
-				<li>
-					<a href="#">Team</a>
-				</li>
-				<li>
-					<a href="#">Termine</a>
-				</li>
-				<li>
-					<a href="#">Kontakt</a>
-				</li>
-			</ul>
-		</div>
+
+     	        {% include nav.html %}	
+
 		<div id="content">
-			
-		  {{ include 'nav.html' }}	
-			
-	     {{ content }}
+  	           {{ content }}
 		</div>
 	</body>
 
