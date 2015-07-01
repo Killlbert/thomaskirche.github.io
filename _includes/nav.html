@@ -1,11 +1,7 @@
 
 <!-- nav building block -->
 
-		<div id="nav-top">
-			<ul>
-				<li>&nbsp;</li>
-			</ul>
-		</div>
+   {% if page.section == 'gottesdient' %}
 		<div id="nav-left">
 			<ul>
 				<li>
@@ -28,3 +24,13 @@
 				</li>
 			</ul>
 		</div>
+   {% elsif page.section == 'gemeinde' %}
+      <!-- to be done -->
+   {% else %}
+		<div id="nav-top">
+			<ul>
+				<li>&nbsp;</li>
+			</ul>
+		</div>
+   {% end %}
+		
